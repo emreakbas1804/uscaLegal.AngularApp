@@ -9,6 +9,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { ServicesComponent } from './services/services.component';
 import { ServiceDetailComponent } from './service-detail/service-detail.component';
 import { FaqComponent } from './faq/faq.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -25,7 +26,8 @@ import { FaqComponent } from './faq/faq.component';
     CommonModule,
     BrowserModule,
     SharedModule,
-    AppRoutingModule    
+    AppRoutingModule,
+    FormsModule   
   ]
 })
 export class HomeModule { }
