@@ -1,0 +1,74 @@
+.services{    
+    position: relative;
+    min-height: 400px;   
+    z-index: 1;
+  }
+  .services::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(/assets/images/section-3-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+  }
+  .services .content{
+    position: relative;
+    z-index: 3;
+    padding: 50px 0px;
+    font-weight: bold;
+  }
+  .services .content h1{
+    font-family: "EB Garamond", serif;
+  }
+  .services {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #ededed;
+}
+
+.services {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #ededed;
+}
+  
+    .services .box {
+        border: 1px solid #1d3d63;
+        color: #1d3d63;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+        margin-top: 20px;
+        transform: scale(.98);
+        transition: all .2s;
+    }
+
+        .services .box:hover {
+            transform: scale(1);
+        }
+
+        .services .box .icon-container {
+            height: 25px;
+        }
+
+        .services .box i {
+            font-size: 30px;
+            color: #1d3d63;
+            float: right;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .services .box .box-header {
+            height: 30px;
+            font-size: 19px;
+        }
+
+        .services .box .text-content {
+            min-height: 150px;
+        }

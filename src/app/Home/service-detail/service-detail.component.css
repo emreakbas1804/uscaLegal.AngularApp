@@ -1,0 +1,16 @@
+.service-detail-breadcrumb{
+    background: linear-gradient(to bottom, #0b0c20, #404150);
+    height: 250px;
+    color: white;
+    
+}
+
+.breadcrumb-header{
+    margin-top: 50px;
+    text-align: center;
+    font-family: "EB Garamond", serif;
+}
+
+.service-detail{
+    padding: 50px 0px;
+}

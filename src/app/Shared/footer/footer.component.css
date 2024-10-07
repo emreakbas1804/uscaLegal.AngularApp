@@ -1,0 +1,39 @@
+footer img{    
+   
+    width : 200px;
+}
+footer-icerik{
+    margin-top: 30px;
+}
+footer h4{
+    margin-top: 20px;
+    color: #1d3d63;    
+}
+footer ul{
+    padding: 0;
+    margin: 0;
+}
+footer li{
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+    list-style: none;  
+}
+footer li:hover i{
+    color: #ddb879;    
+}
+footer i {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #1d3d63;
+}
+footer a i{
+    margin: auto;
+    text-align: center;    
+    font-size: 30px;
+    padding-right: 20px;
+}
+footer .work-hours-header {
+    color: #1d3d63;
+    margin-top: 20px;
+}

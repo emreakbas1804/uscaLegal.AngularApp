@@ -1,0 +1,51 @@
+.faq{    
+    position: relative;
+    min-height: 400px;
+    z-index: 1;
+  }
+  .faq-bg{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(/assets/images/section-2-bg.jpg);    
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    z-index: -1;
+  }
+
+  .faq .content{
+    position: relative;
+    z-index: 3;
+    padding: 50px 0px;
+  }
+
+
+  .breadcrumb{
+    background: linear-gradient(to bottom, #0b0c20, #404150);
+    height: 250px;
+    color: white;
+    margin-bottom: 0px;
+}
+
+.breadcrumb-header{
+    margin-top: 50px;
+    text-align: center;
+    
+}
+.accordion-button{
+    background-color: #ededed;
+  
+}
+.accordion-button:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .faq h1{
+    font-family: "EB Garamond", serif;
+  }

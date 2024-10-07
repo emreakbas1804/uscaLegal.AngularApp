@@ -1,0 +1,53 @@
+
+.about-us{    
+    position: relative;
+    min-height: 400px;
+    z-index: 1;
+  }
+  .about-us-bg{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(/assets/images/section-2-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    z-index: -1;
+  }
+
+  .about-us .content{
+    position: relative;
+    z-index: 3;
+    padding: 50px 0px;
+  }
+  .about-us .specific-header{
+    position: absolute;
+    bottom: -40px;
+    right: 20px;
+    line-height: 78px;
+    color: #f2f2f2;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #000;
+    font-family: "Rubik", sans-serif;
+  }
+
+  .about-us h2{
+    margin-top: 50px;
+    margin-bottom: 25px;
+    font-family: "EB Garamond", serif;
+  }
+  .about-us hr{
+    width: 75px;    
+    border: none; /* Varsayılan kenarlığı kaldırıyoruz */
+    border-top: 5px solid #bf9467;
+  }
+  
+.about-us-img{
+    border-radius: 8px;
+    margin-top: 30px;
+}

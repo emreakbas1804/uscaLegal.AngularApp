@@ -1,0 +1,56 @@
+<app-navbar></app-navbar>
+
+
+<div class="breadcrumb">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <h1 class="breadcrumb-header"> USCA LEGAL HUKUK & DANIŞMANLIK </h1>             
+                <p class="mt-3 text-center">Danışmanlarımızdan aldığımız sıkça sorulan sorular</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="faq">
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="container my-5">
+                    <h1 class="mb-4">Sıkça Sorulan Sorular</h1>
+                    <div class="accordion" id="faqAccordion">
+                      <div *ngFor="let faq of faqs; let i = index" class="accordion-item">
+                        <h2 class="accordion-header" id="heading{{i}}">
+                          <button class="accordion-button" 
+                            [ngClass]="{'collapsed': i !== 0}" 
+                            type="button" data-bs-toggle="collapse" 
+                            [attr.data-bs-target]="'#collapse' + i" 
+                            [attr.aria-expanded]="i === 0 ? 'true' : 'false'" 
+                            [attr.aria-controls]="'collapse' + i">
+                            {{faq.question}}
+                          </button>
+                        </h2>
+                        <div id="collapse{{i}}" class="accordion-collapse collapse" 
+                          [ngClass]="{'show': i === 0}" 
+                          [attr.aria-labelledby]="'heading' + i" 
+                          data-bs-parent="#faqAccordion">
+                          <div class="accordion-body">
+                            {{faq.answer}}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  
+            </div>    
+                
+        </div>    
+    </div>
+    <div class="faq-bg"></div>
+</div>
+
+<app-footer></app-footer>
+  
