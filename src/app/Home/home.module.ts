@@ -10,6 +10,7 @@ import { ServicesComponent } from './services/services.component';
 import { ServiceDetailComponent } from './service-detail/service-detail.component';
 import { FaqComponent } from './faq/faq.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -27,7 +28,8 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     SharedModule,
     AppRoutingModule,
-    FormsModule   
+    FormsModule,
+    HttpClientModule   
   ]
 })
 export class HomeModule { }
