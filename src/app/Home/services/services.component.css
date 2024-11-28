@@ -37,38 +37,83 @@
     background-color: #ededed;
 }
   
-    .services .box {
-        border: 1px solid #1d3d63;
-        color: #1d3d63;
-        padding: 10px;
-        border-radius: 10px;
-        text-align: center;
-        margin-top: 20px;
-        transform: scale(.98);
-        transition: all .2s;
+.custom-box {
+    background: rgba(255, 255, 255, 0.5); /* Şeffaf beyaz arka plan */
+    border-radius: 15px; /* Kutuyu yumuşatma */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Hafif gölge efekti */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-box:hover {
+    transform: translateY(-5px); /* Hover sırasında hafif yükselme efekti */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.icon-container {
+    text-align: center;
+    font-size: 40px;
+    color: #0d6efd; /* Mavi tonunda ikon rengi */
+    margin-bottom: 10px;
+}
+
+.box-header {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.custom-list {
+    list-style: none; /* Liste işaretlerini kaldırma */
+    padding: 0;
+    margin: 0;
+}
+
+.custom-list li {
+    margin-bottom: 10px;
+}
+
+.custom-list li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.custom-list li a:hover {
+    color: #0d6efd; /* Hover sırasında renk değişimi */
+}
+
+.text-content {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+    text-align: justify;
+    min-height: 100px;
+    
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    .custom-box {
+        padding: 15px;
     }
 
-        .services .box:hover {
-            transform: scale(1);
-        }
+    .icon-container {
+        font-size: 35px;
+    }
 
-        .services .box .icon-container {
-            height: 25px;
-        }
+    .box-header {
+        font-size: 20px;
+    }
 
-        .services .box i {
-            font-size: 30px;
-            color: #1d3d63;
-            float: right;
-            display: block;
-            margin-bottom: 15px;
-        }
+    .custom-list li a {
+        font-size: 14px;
+    }
 
-        .services .box .box-header {
-            height: 30px;
-            font-size: 19px;
-        }
-
-        .services .box .text-content {
-            min-height: 150px;
-        }
+    .text-content {
+        font-size: 13px;
+    }
+}
