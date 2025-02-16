@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap');
 
-
+.fixed-navbar {
+  padding-top: 30px; /* Navbar sabit olduğu için içerik üstüne gelmemesi için boşluk bırakır */
+}
 a {
   text-decoration: none;
   color: currentColor;
