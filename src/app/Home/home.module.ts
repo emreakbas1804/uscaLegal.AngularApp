@@ -11,6 +11,7 @@ import { ServiceDetailComponent } from './service-detail/service-detail.componen
 import { FaqComponent } from './faq/faq.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 
 
@@ -21,7 +22,8 @@ import { HttpClientModule } from '@angular/common/http';
     AboutUsComponent,
     ServicesComponent,
     ServiceDetailComponent,
-    FaqComponent
+    FaqComponent,
+    ContactFormComponent
   ],
   imports: [
     CommonModule,

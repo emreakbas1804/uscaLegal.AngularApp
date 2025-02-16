@@ -1,0 +1,78 @@
+<div class="contact">
+    <div class="content">
+        <div class="container">
+            <div class="row">                 
+              <h1 class="mb-4">İletişim</h1> 
+              <hr>                                                     
+            </div>    
+            <div class="row">
+              <div class="col-md-3 mt-5">
+                   <img src="/assets/images/contact.png" alt="contact">
+              </div>
+
+              <div class="col-md-3 mt-5">
+                   <div class="contact-detail">
+                        <ul>
+                            <li><i class="bi bi-telephone"></i> +90 505 886 22 99 </li>
+                            <li><i class="bi bi-envelope"></i> info&#64;uscalegal.av.tr</li>
+                            <li><i class="bi bi-geo-alt"></i>
+                             Cevizli Mahallesi Saraylar Caddesi No: 6 Dap Vazo Kule C Blok Kat:11 D:81 Maltepe/İstanbul
+                            </li>
+    
+                        </ul>
+                    </div>
+              </div>
+
+              <div class="col-md-6 mt-2 form-container">
+                   <div [class.d-none]="!info">
+                        <div class="alert alert-{{infoColor}} text-center" *ngIf="info != ''">
+                            {{info}}
+                        </div>
+                    </div>
+                    <form #form="ngForm" (ngSubmit)="submitContact(form)">
+                        <div class="mb-3">
+                          <input type="text" class="form-control" placeholder="Ad Soyad" [(ngModel)]="contact.nameSurname" name="nameSurname" required #name="ngModel">
+                          <div class="text-danger mt-1" *ngIf="name.invalid && name.touched">
+                            Ad Soyad Zorunlu alan
+                          </div>
+                        </div>
+                      
+                        <div class="mb-3">
+                          <input type="email" class="form-control" placeholder="E-Mail" [(ngModel)]="contact.email" name="email" required #email="ngModel">
+                          <div class="text-danger mt-1" *ngIf="email.invalid && email.touched">
+                            E-Mail Zorunlu Alan               
+                          </div>
+                        </div>
+                      
+                        <div class="mb-3">
+                          <input type="text" class="form-control" placeholder="Telefon" [(ngModel)]="contact.phone" name="phone" required minlength="10" maxlength="16" #phone="ngModel">
+                          <div class="text-danger mt-1" *ngIf="phone.invalid && phone.touched">
+                            Geçersiz Telefon Numarası   
+                          </div>
+                        </div>
+                      
+                        <div class="mb-3">
+                          <textarea name="message" class="form-control" placeholder="Message" [(ngModel)]="contact.message" required #message="ngModel"></textarea>
+                          <div class="text-danger mt-1" *ngIf="message.invalid && message.touched">
+                            Mesaj Zorunlu Alan
+                          </div>
+                        </div>
+                      
+                        <div class="text-center mt-2">
+                          <div class="spinner-border" *ngIf="loading"></div>
+                        </div>
+                      
+                        <div *ngIf="!loading">
+                          <button type="submit" class="custom-button" style="float: right;">Mesajı Gönder</button>
+                        </div>
+                      </form>
+                      
+              </div>
+
+
+            </div>
+                
+        </div>    
+    </div>
+<div class="contact-bg"></div>
+</div>
