@@ -37,18 +37,6 @@
     text-align: center;
     
 }
-.accordion-button{
-    background-color: #ededed;
-  
-}
-.accordion-button:focus {
-    outline: none;
-    box-shadow: none;
-  }
-
-  .faq h1{
-    font-family: "EB Garamond", serif;
-  }
 
 
 

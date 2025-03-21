@@ -1,0 +1,91 @@
+<app-navbar></app-navbar>
+
+
+<div class="container mt-4 mb-5">
+    <!-- Loading Spinner -->
+    <div *ngIf="loading" class="text-center">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+  
+    <!-- Blog Detail -->
+    <div *ngIf="!loading && blogDetail" class="blog-detail">
+      
+      <!-- Breadcrumb Section with Image -->
+      <div class="breadcrumb-container">
+        <div class="breadcrumb-content">
+          <h1 class="blog-title">{{ blogDetail.title }}</h1>
+          <h2 class="category">{{ blogDetail.categoryName }} <span class="create-date">{{ blogDetail.createDate }}</span></h2>
+          <p class="blog-subtext">{{ blogDetail.subText }}</p>
+        </div>
+        <div class="breadcrumb-image">
+          <img [src]="cdnUrl +'/'+ blogDetail.imageUrl" alt="{{ blogDetail.title }}" class="img-fluid">
+        </div>
+      </div>
+  
+      <!-- Description Section -->
+      <div class="description mt-4" [innerHTML]="blogDetail.description"></div>
+  
+      <div class="keywords mt-5">
+        <h5>Anahtar Kelimeler</h5>
+        <div class="tags">
+          <a 
+            *ngFor="let keyword of blogDetail.keywords.split(',')" 
+            [routerLink]="'/makaleler'" 
+            [queryParams]="{ search: keyword.trim() }" 
+            class="badge bg-primary text-decoration-none"
+            >{{ keyword.trim() }}</a>
+        </div>
+      </div>
+
+      
+      
+    
+    </div>
+
+
+    
+</div>
+  
+<div class="blog-list mt-5">
+  <div class="row">                 
+    <h1 class="mb-4">Son Makaleler</h1> 
+    <hr>                                                     
+  </div>   
+
+  <div class="row">
+    <div *ngFor="let blog of blogList" class="col-lg-4 col-md-6 col-sm-12 mb-3">
+      <div class="blog-card">
+          <img [src]="cdnUrl + '/' + blog.imageUrl" [alt]="blog.title" class="blog-image">
+          <div class="blog-content">
+              <h5 class="blog-title">{{ blog.title }}</h5>
+              <p class="blog-category">
+                  {{ blog.categoryName }} 
+                  <span class="blog-create-date">{{ blog.createDate }}</span>
+              </p>                                
+              <p class="blog-subtext">{{ blog.subText }}</p>
+              <a [routerLink]="'/makaleler/' + blog.flag" class="read-more">
+                  Devamını Oku 
+                  <i class="bi bi-arrow-right"></i>  <!-- Bootstrap Ikonu -->
+              </a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<app-contact-form></app-contact-form>
+
+
+
+  <div class="section section-4 mt-4">
+      <div class="container">
+          <h1>USCA LEGAL YOL TARİFİ</h1>
+      </div>
+      <div class="mt-5">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3015.1152216429205!2d29.15860366821289!3d40.9132194519043!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac40c719196f3%3A0xadef37dbdb5e04f1!2sCevizli%2C%20Saraylar%20Cd.%20No%3A6%2C%2034846%20Maltepe%2F%C4%B0stanbul!5e0!3m2!1sen!2str!4v1728333847651!5m2!1sen!2str" width="100%" height="450" style="border:0;"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+  </div>
+  <app-footer></app-footer>

@@ -13,6 +13,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { BlogsComponent } from './blogs/blogs.component';
+import { BlogDetailComponent } from './blog-detail/blog-detail.component';
 
 
 
@@ -25,7 +26,8 @@ import { BlogsComponent } from './blogs/blogs.component';
     ServiceDetailComponent,
     FaqComponent,
     ContactFormComponent,
-    BlogsComponent
+    BlogsComponent,
+    BlogDetailComponent
   ],
   imports: [
     CommonModule,

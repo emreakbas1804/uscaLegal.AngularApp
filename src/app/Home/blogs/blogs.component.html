@@ -17,7 +17,13 @@
 <div class="page">
     <div class="content">
         <div class="container">
-            <div class="row">
+            <div *ngIf="loading" class="text-center">
+                <div class="spinner-border text-primary" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+              </div>
+              
+            <div *ngIf="!loading && blogList"  class="row">
                 
                 <div *ngFor="let blog of blogList" class="col-lg-4 col-md-6 col-sm-12 mb-3">
                     <div class="blog-card">
@@ -29,7 +35,7 @@
                                 <span class="blog-create-date">{{ blog.createDate }}</span>
                             </p>                                
                             <p class="blog-subtext">{{ blog.subText }}</p>
-                            <a [routerLink]="'/blog/' + blog.flag" class="read-more">
+                            <a [routerLink]="'/makaleler/' + blog.flag" class="read-more">
                                 Devamını Oku 
                                 <i class="bi bi-arrow-right"></i>  <!-- Bootstrap Ikonu -->
                             </a>
