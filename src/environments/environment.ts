@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  apiUrl: "https://contactform.ossdoy.com",
+   apiUrl: "https://localhost:7044",
+   cdnUrl: "https://localhost:7044",
 };
 
 /*

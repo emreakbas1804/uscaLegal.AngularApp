@@ -1,0 +1,53 @@
+<app-navbar></app-navbar>
+
+
+<div class="breadcrumb">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <h1 class="breadcrumb-header"> MAKALE VE BLOG YAZILARI</h1>             
+                <p class="mt-3 text-center">Hukuk dünyasında doğru bilgiye ulaşmak zor olabilir. Bu bölümde, uzmanlarımızın sıkça karşılaştığı soruları ve güncel yazılarıyla size rehberlik ediyoruz.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="page">
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                
+                <div *ngFor="let blog of blogList" class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                    <div class="blog-card">
+                        <img [src]="cdnUrl + '/' + blog.imageUrl" [alt]="blog.title" class="blog-image">
+                        <div class="blog-content">
+                            <h5 class="blog-title">{{ blog.title }}</h5>
+                            <p class="blog-category">
+                                {{ blog.categoryName }} 
+                                <span class="blog-create-date">{{ blog.createDate }}</span>
+                            </p>                                
+                            <p class="blog-subtext">{{ blog.subText }}</p>
+                            <a [routerLink]="'/blog/' + blog.flag" class="read-more">
+                                Devamını Oku 
+                                <i class="bi bi-arrow-right"></i>  <!-- Bootstrap Ikonu -->
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+               
+                  
+                  
+            </div>    
+                
+        </div>    
+    </div>
+    <div class="page-bg"></div>
+</div>
+
+
+<app-footer></app-footer>
+  

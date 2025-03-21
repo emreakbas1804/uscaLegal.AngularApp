@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: "https://contactform.ossdoy.com",
+  apiUrl: "https://api.uscalegal.av.tr",
 };
