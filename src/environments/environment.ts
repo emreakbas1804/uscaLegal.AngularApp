@@ -4,8 +4,10 @@
 
 export const environment = {
   production: false,
-   apiUrl: "https://localhost:7044",
-   cdnUrl: "https://localhost:7044",
+  //  apiUrl: "https://localhost:7044",
+  //  cdnUrl: "https://localhost:7044",
+  apiUrl: "https://api.uscalegal.av.tr",
+  cdnUrl: "https://api.uscalegal.av.tr",
 };
 
 /*

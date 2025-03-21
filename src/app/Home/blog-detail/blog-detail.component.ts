@@ -19,6 +19,7 @@ export class BlogDetailComponent implements OnInit {
   constructor(private http: HttpClient,private router : Router) { }
 
   async ngOnInit(): Promise<void> {
+    window.scrollTo(0, 0);
     this.blogId = this.router.url.split("-").pop();
       await this.getBlogDetail();
       await this.getLastThreeBlogList();

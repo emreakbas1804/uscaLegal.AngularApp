@@ -46,7 +46,7 @@ export class ContactFormComponent implements OnInit {
     formData.append("phone", contact.phone);
     formData.append("message", contact.message);
 
-    this.http.post<boolean>(this.apiUrl + "/home/SendEmailForUscaLegal", formData)
+    this.http.post<boolean>(this.apiUrl + "/Contact/PostContact", formData)
     .subscribe({
       next: (result) => {
         // İstek başarıyla tamamlandı
