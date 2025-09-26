@@ -1,11 +1,11 @@
 <app-navbar></app-navbar>
-  
+
 
 <div class="slider-container">
-    <img *ngFor="let image of backgrounds; let i = index" 
-         [src]="image" 
-         [class.active]="i === currentIndex" 
-         [class.hidden]="i !== currentIndex" 
+    <img *ngFor="let image of backgrounds; let i = index"
+         [src]="image"
+         [class.active]="i === currentIndex"
+         [class.hidden]="i !== currentIndex"
          alt="Slider image" class="bg-image">
     <div class="overlay"></div>
 
@@ -19,7 +19,7 @@
                     <p>{{descriptions[currentIndex]}}</p>
                 </div>
             </div>
-           
+
             <div class="col-sm-2 text-center">
                 <img src="/assets/images/logo-icon.png" alt="logo-icon" class="logo-icon">
               </div>
@@ -38,39 +38,40 @@
                     <li><span class="contact">İLETİŞİM : </span> <span class="contact-detail">+90 505 886 22 99 </span> </li>
                     <li><span class="contact">E-Mail : </span> <span class="contact-detail">info uscalegal.av.tr </span>    </li>
                 </ul>
-                
-              
+
+
                 <div class="play-slayt">
-                  
+
                     <i id="prev-btn" class="bi bi-arrow-left" (click)="showPrevSlide()"></i>
                     <i id="next-btn" class="bi bi-arrow-right" (click)="showNextSlide()"></i>
-                   
-                </div>           
+
+                </div>
             </div>
-           
-            
+
+
         </div>
     </div>
 </div>
-  
+
 
 <div class="section-2">
     <div class="content">
         <div class="container">
-            <div class="row">
-                <div class="col-md-7">
+            <div class="row justify-content-center">
+                <div class="col-md-3">
                     <div style="position: relative;">
-                        <img src="/assets/images/section-2-bg-2.jpg" alt="About Us Image" class="img-fluid rounded">
-                        <h1 class="specific-header">KURUMSAL</h1>
+                        <!-- <img src="/assets/images/section-2-bg-2.jpg" alt="About Us Image" class="img-fluid rounded"> -->
+                        <!-- <h1 class="specific-header">KURUMSAL</h1> -->
+                         <img src="/assets/images/kemal-selim/2.jpg" class="img-fluid rounded shadow about-us-img">
                     </div>
-               
+
                 </div>
-                <div class="col-md-5 about-us">
+                <div class="col-md-8 about-us">
                 <h2>HAKKIMIZDA</h2>
                 <hr>
                 <p class="lead mt-2 mb-5">Yenilikçi ve Pratik Çözümler</p>
                 <p class="mt-5 mb-5">
-                    USCA LEGAL Hukuk ve Danışmanlık, müvekkillerine geniş yelpazede yenilikçi ve pratik çözümler sunmak için Av. Kemal Selim USCA tarafından İstanbul'da kurulmuştur. 
+                    USCA LEGAL Hukuk ve Danışmanlık, müvekkillerine geniş yelpazede yenilikçi ve pratik çözümler sunmak için Av. Kemal Selim USCA tarafından İstanbul'da kurulmuştur.
 Kuruluşundan bu yana, bireysel ve kurumsal müvekkillerine en yüksek standartlarda hukuki destek sağlama misyonuna devam etmektedir.
 
                 </p>
@@ -82,7 +83,7 @@ Kuruluşundan bu yana, bireysel ve kurumsal müvekkillerine en yüksek standartl
     </div>
     <div class="section-2-bg"></div>
 </div>
-  
+
 
 <div class="section section-3">
     <div class="content">
@@ -93,7 +94,7 @@ Kuruluşundan bu yana, bireysel ve kurumsal müvekkillerine en yüksek standartl
                 </div>
             </div>
 
-            <div class="row mt-4 justify-content-center"> 
+            <div class="row mt-4 justify-content-center">
 
                 <div class="col-lg-4 col-md-6 mt-3">
                     <div class="custom-box">
@@ -152,11 +153,11 @@ Kuruluşundan bu yana, bireysel ve kurumsal müvekkillerine en yüksek standartl
                         </p>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-4 col-md-6 mt-3">
                     <div class="custom-box">
                         <p class="icon-container">
-                            <i class="bi bi-file-text"></i> 
+                            <i class="bi bi-file-text"></i>
                         </p>
                         <h3 class="box-header">Borçlar Hukuku</h3>
                         <ul class="custom-list">
@@ -181,11 +182,11 @@ Kuruluşundan bu yana, bireysel ve kurumsal müvekkillerine en yüksek standartl
                         </p>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-4 col-md-6 mt-3">
                     <div class="custom-box">
                         <p class="icon-container">
-                            <i class="bi bi-house-heart"></i> 
+                            <i class="bi bi-house-heart"></i>
                         </p>
                         <h3 class="box-header">Aile Hukuku</h3>
                         <ul class="custom-list">
@@ -210,11 +211,11 @@ Kuruluşundan bu yana, bireysel ve kurumsal müvekkillerine en yüksek standartl
                         </p>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-4 col-md-6 mt-3">
                     <div class="custom-box">
                         <p class="icon-container">
-                            <i class="bi bi-shield-lock"></i> 
+                            <i class="bi bi-shield-lock"></i>
                         </p>
                         <h3 class="box-header">Ceza Hukuku</h3>
                         <ul class="custom-list">
@@ -239,11 +240,11 @@ Kuruluşundan bu yana, bireysel ve kurumsal müvekkillerine en yüksek standartl
                         </p>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-4 col-md-6 mt-3">
                     <div class="custom-box">
                         <p class="icon-container">
-                            <i class="bi bi-house-door"></i> 
+                            <i class="bi bi-house-door"></i>
                         </p>
                         <h3 class="box-header">Gayrimenkul Hukuku</h3>
                         <ul class="custom-list">
@@ -268,11 +269,11 @@ Kuruluşundan bu yana, bireysel ve kurumsal müvekkillerine en yüksek standartl
                         </p>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-4 col-md-6 mt-3">
                     <div class="custom-box">
                         <p class="icon-container">
-                            <i class="bi bi-heart"></i> 
+                            <i class="bi bi-heart"></i>
                         </p>
                         <h3 class="box-header">Miras Hukuku</h3>
                         <ul class="custom-list">
@@ -297,11 +298,11 @@ Kuruluşundan bu yana, bireysel ve kurumsal müvekkillerine en yüksek standartl
                         </p>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-4 col-md-6 mt-3">
                     <div class="custom-box">
                         <p class="icon-container">
-                            <i class="bi bi-briefcase"></i> 
+                            <i class="bi bi-briefcase"></i>
                         </p>
                         <h3 class="box-header">İdare Hukuku</h3>
                         <ul class="custom-list">
@@ -330,7 +331,7 @@ Kuruluşundan bu yana, bireysel ve kurumsal müvekkillerine en yüksek standartl
                 <div class="col-lg-4 col-md-6 mt-3">
                     <div class="custom-box">
                         <p class="icon-container">
-                            <i class="bi bi-cart-check"></i> 
+                            <i class="bi bi-cart-check"></i>
                         </p>
                         <h3 class="box-header">Tüketici Hukuku</h3>
                         <ul class="custom-list">
@@ -355,11 +356,11 @@ Kuruluşundan bu yana, bireysel ve kurumsal müvekkillerine en yüksek standartl
                         </p>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-4 col-md-6 mt-3">
                     <div class="custom-box">
                         <p class="icon-container">
-                            <i class="bi bi-person-lines-fill"></i> 
+                            <i class="bi bi-person-lines-fill"></i>
                         </p>
                         <h3 class="box-header">Vatandaşlık ve Göçmen Hukuku</h3>
                         <ul class="custom-list">
@@ -384,11 +385,11 @@ Kuruluşundan bu yana, bireysel ve kurumsal müvekkillerine en yüksek standartl
                         </p>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-4 col-md-6 mt-3">
                     <div class="custom-box">
                         <p class="icon-container">
-                            <i class="bi bi-gear-fill"></i> 
+                            <i class="bi bi-gear-fill"></i>
                         </p>
                         <h3 class="box-header">Fikri ve Sınai Mülkiyet Hukuku</h3>
                         <ul class="custom-list">
@@ -413,16 +414,16 @@ Kuruluşundan bu yana, bireysel ve kurumsal müvekkillerine en yüksek standartl
                         </p>
                     </div>
                 </div>
-                
+
             </div>
-           
+
         </div>
     </div>
 </div>
 
 
 <app-contact-form></app-contact-form>
- 
+
 
 <div class="section section-4">
     <div class="container">

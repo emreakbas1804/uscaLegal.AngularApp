@@ -1,27 +1,49 @@
 <div class="contact">
     <div class="content">
         <div class="container">
-            <div class="row">                 
-              <h1 class="mb-4">İletişim</h1> 
-              <hr>                                                     
-            </div>    
+            <div class="row">
+              <h1 class="mb-4">İletişim</h1>
+              <hr>
+            </div>
             <div class="row">
               <div class="col-md-3 mt-5">
-                   <img src="/assets/images/contact.png" alt="contact">
+                   <!-- <img src="/assets/images/contact-form.jpg" alt="contact"> -->
+                    <img src="/assets/images/kemal-selim/4.jpg" class="img-fluid rounded shadow about-us-img">
               </div>
 
-              <div class="col-md-3 mt-5">
-                   <div class="contact-detail">
-                        <ul>
-                            <li><i class="bi bi-telephone"></i> +90 505 886 22 99 </li>
-                            <li><i class="bi bi-envelope"></i> info&#64;uscalegal.av.tr</li>
-                            <li><i class="bi bi-geo-alt"></i>
-                             Cevizli Mahallesi Saraylar Caddesi No: 6 Dap Vazo Kule C Blok Kat:11 D:81 Maltepe/İstanbul
-                            </li>
-    
-                        </ul>
-                    </div>
-              </div>
+             <div class="col-md-3 mt-5">
+    <div class="contact-detail">
+        <ul class="list-unstyled">
+            <!-- Telefon -->
+            <li class="mb-2">
+                <i class="bi bi-telephone-fill me-2"></i>
+                <a href="tel:+905058862299">+90 505 886 22 99</a>
+            </li>
+
+            <!-- WhatsApp -->
+            <li class="mb-2">
+                <i class="bi bi-whatsapp me-2"></i>
+                <a href="https://wa.me/905058862299" target="_blank" rel="noopener">
+                    +90 505 886 22 99 (WhatsApp)
+                </a>
+            </li>
+
+            <!-- E-posta -->
+            <li class="mb-2">
+                <i class="bi bi-envelope-fill me-2"></i>
+                <a href="mailto:info@uscalegal.av.tr">info@uscalegal.av.tr</a>
+            </li>
+
+            <!-- Adres -->
+            <li class="mb-2">
+                <i class="bi bi-geo-alt-fill me-2"></i>
+                <a href="https://www.google.com/maps/search/?api=1&query=Cevizli+Mahallesi+Saraylar+Caddesi+No:+6+Dap+Vazo+Kule+C+Blok+Kat:11+D:81+Maltepe/İstanbul" target="_blank" rel="noopener">
+                    Cevizli Mahallesi Saraylar Caddesi No: 6, Dap Vazo Kule C Blok Kat:11 D:81, Maltepe/İstanbul
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
 
               <div class="col-md-6 mt-2 form-container">
                    <div [class.d-none]="!info">
@@ -36,43 +58,66 @@
                             Ad Soyad Zorunlu alan
                           </div>
                         </div>
-                      
+
                         <div class="mb-3">
                           <input type="email" class="form-control" placeholder="E-Mail" [(ngModel)]="contact.email" name="email" required #email="ngModel">
                           <div class="text-danger mt-1" *ngIf="email.invalid && email.touched">
-                            E-Mail Zorunlu Alan               
+                            E-Mail Zorunlu Alan
                           </div>
                         </div>
-                      
+
                         <div class="mb-3">
                           <input type="text" class="form-control" placeholder="Telefon" [(ngModel)]="contact.phone" name="phone" required minlength="10" maxlength="16" #phone="ngModel">
                           <div class="text-danger mt-1" *ngIf="phone.invalid && phone.touched">
-                            Geçersiz Telefon Numarası   
+                            Geçersiz Telefon Numarası
                           </div>
                         </div>
-                      
+
                         <div class="mb-3">
                           <textarea name="message" class="form-control" placeholder="Message" [(ngModel)]="contact.message" required #message="ngModel"></textarea>
                           <div class="text-danger mt-1" *ngIf="message.invalid && message.touched">
                             Mesaj Zorunlu Alan
                           </div>
                         </div>
-                      
+
                         <div class="text-center mt-2">
                           <div class="spinner-border" *ngIf="loading"></div>
                         </div>
-                      
+
                         <div *ngIf="!loading">
                           <button type="submit" class="custom-button" style="float: right;">Mesajı Gönder</button>
                         </div>
                       </form>
-                      
+
               </div>
 
 
             </div>
-                
-        </div>    
+
+        </div>
     </div>
 <div class="contact-bg"></div>
 </div>
+
+
+<style>
+.contact-detail a {
+    color: #bf9467;
+    text-decoration: none;
+}
+.contact-detail a:hover {
+    color: #0b0c20;
+    text-decoration: underline;
+}
+.contact-detail i {
+    font-size: 1.3rem;
+    color: #bf9467;
+}
+.contact-detail p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+.contact-detail h5 {
+    color: #0b0c20;
+}
+</style>

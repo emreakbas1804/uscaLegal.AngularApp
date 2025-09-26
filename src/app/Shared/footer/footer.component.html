@@ -1,46 +1,95 @@
-<footer>
+<footer class="footer bg-light text-dark pt-5">
     <div class="container">
         <div class="row py-4">
-            <div class="col-md-4 text">
+            <!-- Logo ve Hakkımızda -->
+            <div class="col-md-4 mb-4 mb-md-0">
                 <p>
-                    <img src="../assets/images/logo.png" alt="Logo">
+                    <img src="../assets/images/logo.png" alt="Logo" class="img-fluid rounded shadow about-us-img">
                 </p>
-                <p style="padding-top: 0;">
-                    Hukuki meselelerde güvenilir ve profesyonel desteğe ihtiyaç duyduğunuz her an yanınızdayız. Alanında uzman avukatlarımız, sizin için en uygun çözümleri sunarak haklarınızı savunmaya ve süreçleri en doğru şekilde yönetmenize yardımcı olmaya hazır. Sormak istedikleriniz veya danışmak istediğiniz konular için bizimle hemen iletişime geçebilirsiniz
+                <p>
+                    Hukuki meselelerde güvenilir ve profesyonel desteğe ihtiyaç duyduğunuz her an yanınızdayız. Alanında uzman avukatlarımız, sizin için en uygun çözümleri sunarak haklarınızı savunmaya ve süreçleri en doğru şekilde yönetmenize yardımcı olmaya hazır. Sormak istedikleriniz veya danışmak istediğiniz konular için bizimle hemen iletişime geçebilirsiniz.
                 </p>
-
             </div>
 
-            <div class="col-md-4">
-                <h4>İLETİŞİM</h4>
-                <hr>
-                <div class="footer-content">
-                    <ul>
-                        <li><i class="bi bi-telephone"></i> +90 505 886 22 99 </li>
-                        <li><i class="bi bi-envelope"></i> info&#64;uscalegal.av.tr</li>
-                        <li><i class="bi bi-geo-alt"></i>
-                            Cevizli Mahallesi Saraylar Caddesi No: 6 Dap Vazo Kule C Blok Kat:11 D:81 Maltepe/İstanbul
-                        </li>
+            <!-- İletişim Bilgileri -->
+            <div class="col-md-4 mb-4 mb-md-0">
+                <h5 class="mb-3">İLETİŞİM</h5>
+                <hr class="mb-3" style="border-color: #ccc;">
+                <ul class="contact-info list-unstyled">
+                    <!-- Telefon -->
+                    <li class="mb-2">
+                        <i class="bi bi-telephone-fill footer-icon me-2"></i>
+                        <a href="tel:+905058862299">+90 505 886 22 99</a>
+                    </li>
 
-                    </ul>
-                </div>
+                    <!-- WhatsApp -->
+                    <li class="mb-2">
+                        <i class="bi bi-whatsapp footer-icon me-2"></i>
+                        <a href="https://wa.me/905058862299" target="_blank">+90 505 886 22 99 (WhatsApp)</a>
+                    </li>
+
+                    <!-- E-posta -->
+                    <li class="mb-2">
+                        <i class="bi bi-envelope-fill footer-icon me-2"></i>
+                        <a href="mailto:info@uscalegal.av.tr">info@uscalegal.av.tr</a>
+                    </li>
+
+                    <!-- Adres -->
+                    <li class="mb-2">
+                        <i class="bi bi-geo-alt-fill footer-icon me-2"></i>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Cevizli,+Mustafa+Kemal+Cd.+Hukukçular+Towers+No:+66+B/8-9-10-11,+34865+Kartal/İstanbul" target="_blank">
+                            Cevizli, Mustafa Kemal Cd.<br>
+                            Hukukçular Towers No: 66 B/8-9-10-11,<br>
+                            34865 Kartal/İstanbul
+                        </a>
+                    </li>
+                </ul>
             </div>
 
-            <div class="col-md-4">
-                <h4 class="work-hours-header">ÇALIŞMA SAATLERİ</h4>
-                <hr>
-                <ul>
+            <!-- Çalışma Saatleri -->
+            <div class="col-md-4 mb-4 mb-md-0">
+                <h5 class="mb-3">ÇALIŞMA SAATLERİ</h5>
+                <hr class="mb-3" style="border-color: #ccc;">
+                <ul class="list-unstyled">
                     <li>Pazartesi : 08:30 - 19:30</li>
                     <li>Salı : 08:30 - 19:30</li>
                     <li>Çarşamba : 08:30 - 19:30</li>
                     <li>Perşembe : 08:30 - 19:30</li>
                     <li>Cuma : 08:30 - 19:30</li>
                     <li>Cumartesi : 10:00 - 15:00</li>
-                    <li> Pazar : <span class="text-danger">Kapalı</span> </li>
+                    <li>Pazar : <span class="text-danger">Kapalı</span></li>
                 </ul>
             </div>
-
         </div>
 
+        <hr style="border-color: #ccc;">
+        <p class="text-center mb-0">&copy; 2025 USCA Legal Hukuk ve Danışmanlık. Tüm hakları saklıdır.</p>
     </div>
 </footer>
+
+<style>
+.footer a {
+    color: #bf9467;
+    text-decoration: none;
+}
+.footer a:hover {
+    color: #0b0c20;
+    text-decoration: underline;
+}
+.footer-icon {
+    font-size: 1.3rem;
+    color: #bf9467;
+}
+.footer p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+.footer h5 {
+    color: #0b0c20;
+}
+@media (max-width: 767px) {
+    .footer .text-md-start, .footer .text-md-end {
+        text-align: center !important;
+    }
+}
+</style>
