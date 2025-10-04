@@ -8,13 +8,13 @@ declare var $ : any;
 export class IndexComponent implements OnInit {
 
   backgrounds = [
-    '/assets/images/bg1.jpg',
-    '/assets/images/bg2.jpg',
-    '/assets/images/bg3.jpg',
-    '/assets/images/bg4.jpg'
+    '/assets/images/bg-1.jpg',
+    '/assets/images/bg-2.jpg',
+    '/assets/images/bg-3.jpg',
+    '/assets/images/bg-4.jpg',
   ];
 
-  
+
   currentIndex = 0;
 
 
@@ -39,13 +39,13 @@ export class IndexComponent implements OnInit {
   startImageSlider() {
     setInterval(() => {
       this.currentIndex = (this.currentIndex + 1) % this.backgrounds.length;
-    }, 5000); 
+    }, 5000);
   }
 
   showPrevSlide(){
     this.currentIndex = (this.currentIndex - 1 + this.backgrounds.length) % this.backgrounds.length;
   }
-  
+
   showNextSlide(){
     this.currentIndex = (this.currentIndex + 1) % this.backgrounds.length;
   }
